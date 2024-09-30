@@ -20,9 +20,9 @@ eta = prompt('dimmi quanti anni ha il passeggero')
 //terza fase: elaborazione
 
 if (eta < 18) {
-	total = (kilometer * 0.21 * 20) / 100
+	total = kilometer * 0.21 - (kilometer * 0.21 * 20) / 100
 } else if (eta > 65) {
-	total = (kilometer * 0.21 * 40) / 100
+	total = kilometer * 0.21 - (kilometer * 0.21 * 40) / 100
 } else {
 	total = kilometer * 0.21
 }
