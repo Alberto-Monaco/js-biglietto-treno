@@ -28,6 +28,6 @@ if (eta < 18) {
 }
 
 total_around = total.toFixed(2)
-alert(total_around)
 
 //quarta fase: output
+alert(`Il totale che pagherà è ${total_around}`)
