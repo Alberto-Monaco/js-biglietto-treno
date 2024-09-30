@@ -23,16 +23,16 @@ eta = parseInt(eta)
 
 if (eta < 18) {
 	total = kilometer * 0.21 - (kilometer * 0.21 * 20) / 100
-	message = 'hai diritto al 20% di sconto'
+	message = 'comprensivo del 20% di sconto'
 } else if (eta >= 65) {
 	total = kilometer * 0.21 - (kilometer * 0.21 * 40) / 100
-	message = 'hai diritto al 40% di sconto'
+	message = 'comprensivo del 40% di sconto'
 } else {
 	total = kilometer * 0.21
-	message = 'non hai diritto a sconti'
+	message = 'e non hai diritto a sconti'
 }
 
 total_around = total.toFixed(2)
 
 //quarta fase: output
-alert(`Il totale che pagherai è € ${total_around} e ${message}`)
+alert(`Il totale che pagherai è € ${total_around} ${message}`)
