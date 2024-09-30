@@ -12,23 +12,27 @@ let kilometer
 let eta
 let total
 let total_around
+let message
 
 //seconda fase: raccolta dati
 kilometer = prompt('dimmi il numero di km che vuoi fare')
-eta = prompt('dimmi quanti anni ha il passeggero')
+eta = prompt('dimmi quanti anni hai')
 kilometer = parseInt(kilometer)
 eta = parseInt(eta)
 //terza fase: elaborazione
 
 if (eta < 18) {
 	total = kilometer * 0.21 - (kilometer * 0.21 * 20) / 100
+	message = 'hai diritto al 20% di sconto'
 } else if (eta >= 65) {
 	total = kilometer * 0.21 - (kilometer * 0.21 * 40) / 100
+	message = 'hai diritto al 40% di sconto'
 } else {
 	total = kilometer * 0.21
+	message = 'non hai diritto ai sconti'
 }
 
 total_around = total.toFixed(2)
 
 //quarta fase: output
-alert(`Il totale che pagherà è ${total_around}`)
+alert(`Il totale che pagherai è € ${total_around} e ${message}`)
