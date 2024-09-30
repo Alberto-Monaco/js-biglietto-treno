@@ -29,7 +29,7 @@ if (eta < 18) {
 	message = 'hai diritto al 40% di sconto'
 } else {
 	total = kilometer * 0.21
-	message = 'non hai diritto ai sconti'
+	message = 'non hai diritto a sconti'
 }
 
 total_around = total.toFixed(2)
