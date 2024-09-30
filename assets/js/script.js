@@ -28,6 +28,6 @@ if (eta < 18) {
 }
 
 total_around = total.toFixed(2)
-console.log(total_around)
+alert(total_around)
 
 //quarta fase: output
