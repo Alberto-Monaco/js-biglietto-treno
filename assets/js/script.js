@@ -8,9 +8,26 @@
 //
 
 // prima fase: preparazione
+let kilometer
+let eta
+let total
+let total_around
 
 //seconda fase: raccolta dati
+kilometer = prompt('dimmi il numero di km che vuoi fare')
+eta = prompt('dimmi quanti anni ha il passeggero')
 
 //terza fase: elaborazione
+
+if (eta < 18) {
+	total = (kilometer * 0.21 * 20) / 100
+} else if (eta > 65) {
+	total = (kilometer * 0.21 * 40) / 100
+} else {
+	total = kilometer * 0.21
+}
+
+total_around = total.toFixed(2)
+console.log(total_around)
 
 //quarta fase: output
