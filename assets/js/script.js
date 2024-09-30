@@ -16,7 +16,8 @@ let total_around
 //seconda fase: raccolta dati
 kilometer = prompt('dimmi il numero di km che vuoi fare')
 eta = prompt('dimmi quanti anni ha il passeggero')
-
+kilometer = parseInt(kilometer)
+eta = parseInt(eta)
 //terza fase: elaborazione
 
 if (eta < 18) {
