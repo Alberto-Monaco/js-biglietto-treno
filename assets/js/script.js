@@ -21,8 +21,8 @@ kilometer = prompt('dimmi il numero di km che vuoi fare')
 age = prompt('dimmi quanti anni hai')
 kilometer = parseInt(kilometer)
 age = parseInt(age)
-//terza fase: elaborazione
 
+//terza fase: elaborazione
 if (age < 18) {
 	total = kilometer * price_km - (kilometer * price_km * 20) / 100
 	message = 'comprensivo del 20% di sconto'
@@ -33,7 +33,6 @@ if (age < 18) {
 	total = kilometer * price_km
 	message = 'e non hai diritto a sconti'
 }
-
 total_around = parseFloat(total.toFixed(2))
 
 //quarta fase: output
