@@ -9,7 +9,7 @@
 
 // prima fase: preparazione
 let kilometer
-let eta
+let age
 let total
 let total_around
 let message
@@ -18,15 +18,15 @@ let price_km
 //seconda fase: raccolta dati
 price_km = 0.21
 kilometer = prompt('dimmi il numero di km che vuoi fare')
-eta = prompt('dimmi quanti anni hai')
+age = prompt('dimmi quanti anni hai')
 kilometer = parseInt(kilometer)
-eta = parseInt(eta)
+age = parseInt(age)
 //terza fase: elaborazione
 
-if (eta < 18) {
+if (age < 18) {
 	total = kilometer * price_km - (kilometer * price_km * 20) / 100
 	message = 'comprensivo del 20% di sconto'
-} else if (eta >= 65) {
+} else if (age >= 65) {
 	total = kilometer * price_km - (kilometer * price_km * 40) / 100
 	message = 'comprensivo del 40% di sconto'
 } else {
