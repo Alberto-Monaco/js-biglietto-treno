@@ -14,6 +14,7 @@ let total
 let total_around
 let message
 let price_km
+let final_price
 
 //seconda fase: raccolta dati
 price_km = 0.21
@@ -23,14 +24,15 @@ kilometer = parseInt(kilometer)
 age = parseInt(age)
 
 //terza fase: elaborazione
+final_price = kilometer * price_km
 if (age < 18) {
-	total = kilometer * price_km - (kilometer * price_km * 20) / 100
+	total = final_price - (final_price * 20) / 100
 	message = 'comprensivo del 20% di sconto'
 } else if (age > 65) {
-	total = kilometer * price_km - (kilometer * price_km * 40) / 100
+	total = final_price - (final_price * 40) / 100
 	message = 'comprensivo del 40% di sconto'
 } else {
-	total = kilometer * price_km
+	total = final_price
 	message = 'e non hai diritto a sconti'
 }
 total_around = parseFloat(total.toFixed(2))
