@@ -32,7 +32,7 @@ if (eta < 18) {
 	message = 'e non hai diritto a sconti'
 }
 
-total_around = total.toFixed(2)
+total_around = parseFloat(total.toFixed(2))
 
 //quarta fase: output
 alert(`Il totale che pagherai è € ${total_around} ${message}`)
