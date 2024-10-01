@@ -26,7 +26,7 @@ age = parseInt(age)
 if (age < 18) {
 	total = kilometer * price_km - (kilometer * price_km * 20) / 100
 	message = 'comprensivo del 20% di sconto'
-} else if (age >= 65) {
+} else if (age > 65) {
 	total = kilometer * price_km - (kilometer * price_km * 40) / 100
 	message = 'comprensivo del 40% di sconto'
 } else {
